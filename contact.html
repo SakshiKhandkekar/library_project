@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Library Management</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6f3;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #174a3b;
+            color: white;
+            padding: 20px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        /* Navigation */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .container h2 {
+            color: #174a3b;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .container p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Forms Layout */
+        .form-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 25px;
+        }
+
+        .form-box {
+            background-color: white;
+            border: 2px solid #174a3b;
+            border-radius: 8px;
+            padding: 25px;
+            width: 450px;
+        }
+
+        .form-box h3 {
+            color: #174a3b;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: #174a3b;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #26745b;
+        }
+
+        /* Contact Details */
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e2eee7;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #174a3b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Library Management</h1>
+
+        <!-- Navigation Links -->
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="service.html">Services</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <div class="container">
+
+        <h2>Contact Us</h2>
+
+        <p>Have a question? Contact our library team or register for membership.</p>
+
+        <div class="form-container">
+
+            <!-- Contact Form -->
+            <div class="form-box">
+
+                <h3>Contact Form</h3>
+
+                <form action="#" method="post">
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject"
+                           placeholder="Enter subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"
+                              placeholder="Write your message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
+
+            <!-- Membership Form -->
+            <div class="form-box">
+
+                <h3>Library Membership Form</h3>
+
+                <form action="#" method="post">
+
+                    <label for="member-name">Full Name:</label>
+                    <input type="text" id="member-name" name="member-name"
+                           placeholder="Enter your full name" required>
+
+                    <label for="member-email">Email Address:</label>
+                    <input type="email" id="member-email" name="member-email"
+                           placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number" required>
+
+                    <label for="member-type">Membership Type:</label>
+                    <select id="member-type" name="member-type" required>
+                        <option value="">Select membership</option>
+                        <option value="student">Student</option>
+                        <option value="regular">Regular</option>
+                        <option value="premium">Premium</option>
+                    </select>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"
+                              placeholder="Enter your address" required></textarea>
+
+                    <button type="submit">Register</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <h3>Library Contact Information</h3>
+
+            <p>Email: library@example.com</p>
+            <p>Address: Main Road, Pune, Maharashtra</p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Library Management Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

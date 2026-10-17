@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - Knowledge Library</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f4f1ea;
+            color: #333333;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #174a3b;
+            color: white;
+            padding: 20px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav a {
+            color: white;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+            margin: 30px;
+            padding: 20px;
+            border: 3px solid #174a3b;
+        }
+
+        .about h2 {
+            color: #174a3b;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            color: #174a3b;
+            margin-top: 40px;
+        }
+
+        /* Book Categories Grid */
+        .container {
+            background-color: rgb(183, 211, 202);
+            color: brown;
+            margin: 40px;
+            padding: 15px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+        /* Book Blocks */
+        .container div {
+            padding: 15px;
+            border: 2px solid white;
+            text-align: center;
+
+            transition: all 1s ease-in-out;
+        }
+
+        /* Book Block Hover Effect */
+        .container div:hover {
+            background-color: rgb(130, 238, 238);
+            color: black;
+            transform: scale(1.05);
+            border-color: #174a3b;
+        }
+
+        /* Book Images */
+        .container img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+
+            transition: all 1s ease-in-out;
+        }
+
+        /* Image Zoom Effect */
+        .container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Individual Book Block Colors */
+        .item1 {
+            background-color: blue;
+            color: white;
+        }
+
+        .item2 {
+            background-color: rgb(236, 91, 91);
+            color: white;
+        }
+
+        .item3 {
+            background-color: rgb(44, 207, 82);
+        }
+
+        .item4 {
+            background-color: rgb(230, 65, 208);
+            color: white;
+        }
+
+        .item5 {
+            background-color: rgb(221, 244, 77);
+        }
+
+        .item6 {
+            background-color: rgb(234, 135, 37);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #174a3b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>📚 Knowledge Library</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+
+        <h2>About Our Library</h2>
+
+        <p>
+            Knowledge Library is a place where students and readers
+            can explore books, learn new skills, and develop their
+            knowledge. We provide books from different subjects
+            and categories for everyone.
+        </p>
+
+        <p>
+            Our goal is to encourage reading habits and make learning
+            an enjoyable experience.
+        </p>
+
+    </section>
+
+    <!-- Book Categories -->
+    <h2 class="section-title">Explore Our Book Categories</h2>
+
+    <div class="container">
+
+        <div class="item1">
+            <img
+                src="images/about1.png"
+                alt="Story books">
+
+            <h3>1. Story Books</h3>
+            <p>Enjoy interesting stories and adventures.</p>
+        </div>
+
+        <div class="item2">
+            <img
+                src="images/about2.png"
+                alt="Science books">
+
+            <h3>2. Science Books</h3>
+            <p>Discover science and technology.</p>
+        </div>
+
+        <div class="item3">
+            <img
+                src="images/about3.png"
+                alt="Educational books">
+
+            <h3>3. Educational Books</h3>
+            <p>Improve your knowledge and skills.</p>
+        </div>
+
+        <div class="item4">
+            <img
+                src="images/about4.png"
+                alt="Technology books">
+
+            <h3>4. Technology Books</h3>
+            <p>Learn about computers and programming.</p>
+        </div>
+
+        <div class="item5">
+            <img
+                src="images/about5.png"
+                alt="Academic books">
+
+            <h3>5. Academic Books</h3>
+            <p>Find useful books for your studies.</p>
+        </div>
+
+        <div class="item6">
+            <img
+                src="images/about6.png"
+                alt="Reading books">
+
+            <h3>6. General Reading</h3>
+            <p>Explore books for everyday learning.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Knowledge Library | Read More, Learn More</p>
+    </footer>
+
+</body>
+
+</html>
